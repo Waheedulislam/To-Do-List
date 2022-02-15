@@ -13,15 +13,14 @@
 
 <body>
     <h1 class="text-center mt-5">To Do List</h1>
-    <div class="text-center container w-50 m-auto mt-5">
+    <div class="text-center container w-75 m-auto mt-5">
         <div class="input-group mt-5">
-            <input class="form-control" aria-label="With textarea"></input>
-            <button class=" btn btn-danger input-group-text">Add Items</button>
+            <input id="input-value" class="form-control" aria-label="With textarea"></input>
+            <button id="add-btn" class=" btn btn-danger input-group-text">Add Items</button>
         </div>
 
         <div class="mt-5">
             <table class="table">
-
                 <thead>
                     <tr>
                         <th scope="col">Number</th>
@@ -29,12 +28,7 @@
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Button</td>
-                    </tr>
+                <tbody id="content-container">
                 </tbody>
             </table>
         </div>
